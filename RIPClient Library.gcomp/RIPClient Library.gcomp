@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SourceFile Checksum="AB43556004FEB2027684F2AA0D57C6A3AFEAC4FA49F1217FF4B381EF5DF4BA013DE33B8B89A2A263DFAADF2A5B01F77524541EF2A1663393B66C6CA550223375" Timestamp="1D7C443C34CF4CF" xmlns="http://www.ni.com/PlatformFramework">
+	<SourceModelFeatureSet>
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="GComponentFeatureSet" Name="http://www.ni.com/GComponent.xsd" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="JavaScript Library" Name="http://www.ni.com/JavaScriptLibrary" OldestCompatibleVersion="6.4.0.49152" Version="6.4.0.49152" />
+		<ParsableNamespace AssemblyFileVersion="8.4.0.49575" FeatureSetName="Editor" Name="http://www.ni.com/PlatformFramework" OldestCompatibleVersion="8.1.0.49152" Version="8.1.0.49152" />
+		<ApplicationVersionInfo Build="8.4.0.49575" Name="LabVIEW NXG" Version="5.1.0" />
+	</SourceModelFeatureSet>
+	<ComponentDefinition DefaultConfigurationName="Configuration1" Id="4f7c4eeb628b4122911a68a4fc0e29f7" RootNamespaceId="3a85860c2ff84a0aac6a7b7dd1e7a998" xmlns="http://www.ni.com/GComponent.xsd">
+		<Icon Id="5f9443b6c4414a089ded3d696bf17bcf" ListViewIconCrop="0 0 40 40" xmlns="http://www.ni.com/PlatformFramework">
+			<IconPanel Height="[float]40" Id="56f44e6c246f4d1ca83fe3712b7ab42c" Left="[float]0" MinHeight="[float]0" MinWidth="[float]0" PanelSizeMode="Resize" Top="[float]0" Width="[float]40">
+				<IconTemplate Height="[float]40" Id="ad9470215b724a6784f902977f5f58e8" Left="[float]0" TemplateName="[string]Blank" Top="[float]0" Width="[float]40" />
+			</IconPanel>
+		</Icon>
+		<CompilerSymbolTable Id="3e534e455db34a0d8eecc6105cb5f784" xmlns="http://www.ni.com/PlatformFramework" />
+		<ComponentConfiguration Id="283250d35dd24b6eb6f305c312c0c48e" Name="Configuration1">
+			<CompilerSymbolTable Id="65bceebdde5940279fcf5d25887ea7f6" xmlns="http://www.ni.com/PlatformFramework" />
+			<GLibraryProperties Id="6e87861ba5724612935e564e8441808d" />
+			<ComponentItemProperties AssociatedEnvoyId="1cd2884a3b9944088afb398b5760254d" Exported="True" Id="f1dc1a902e66456d9de58ccd9526b60c" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="7ba7e66ad54e403b9aa5ddf76a626e0a" Id="ef3148dd3778440b9bc4589de37f17b3" />
+			<ComponentItemProperties AlwaysInclude="True" AssociatedEnvoyId="60bea1f259844c21aa9852bef69fc867" Id="ea826781e71847a383df1c3b2f7c577e" />
+		</ComponentConfiguration>
+	</ComponentDefinition>
+	<EnvoyManagerFile Id="d00146d826ea445585da45786f21ef42" xmlns="http://www.ni.com/PlatformFramework">
+		<EnvoyManagerRootEnvoy Id="ec321cbc303843199d405617a9b30672" ModelDefinitionType="EnvoyManagerRootEnvoy" Name="RootEnvoy" />
+		<EmbeddedDefinitionReference Id="fe96e5e670cd42e1bf8800f4f82170a6" ModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentDefinitionEnvoyHierarchyRoot" Name="Global namespace">
+			<ComponentDefinitionEnvoyHierarchyRoot xmlns="http://www.ni.com/GComponent.xsd" />
+			<NameScopingEnvoy AutomaticallyResolveUp="True" Id="3a85860c2ff84a0aac6a7b7dd1e7a998" Name="Calculator Library">
+				<NameScopingEnvoy AutomaticallyResolveUp="True" Id="3274688a503f42c69862dde7af201da0" Name="javascript">
+					<FileReference Bindings=".js" Id="7ba7e66ad54e403b9aa5ddf76a626e0a" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="RIP.js" StoragePath="javascript\RIP.js" />
+					<FileReference Bindings=".js" Id="60bea1f259844c21aa9852bef69fc867" ModelDefinitionType="{http://www.ni.com/PlatformFramework}ExternalFile" Name="methods.js" StoragePath="javascript\methods.js" />
+				</NameScopingEnvoy>
+				<SourceFileReference Bindings="EnvoyManager" Id="1cd2884a3b9944088afb398b5760254d" ModelDefinitionType="{http://www.ni.com/JavaScriptLibrary}JavaScriptLibrary" Name="RIPClient.jsli" StoragePath="RIPClient.jsli" />
+			</NameScopingEnvoy>
+		</EmbeddedDefinitionReference>
+		<NameScopingEnvoy Id="8ea7c1a277fe41c1ab1639526cd5512c" Name="RIPClient Library.gcomp" NameTracksFileName="True">
+			<ContentReference ContentIdentifier="283250d35dd24b6eb6f305c312c0c48e" Id="8b9720c472ba45a6be8447eb9323d677" Name="Configuration1" OverridingModelDefinitionType="{http://www.ni.com/GComponent.xsd}ComponentConfiguration" />
+		</NameScopingEnvoy>
+	</EnvoyManagerFile>
+</SourceFile>
